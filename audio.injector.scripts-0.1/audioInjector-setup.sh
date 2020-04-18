@@ -1,3 +1,4 @@
+#!/bin/bash
 # check the device tree overlay is setup correctly ...
 # firstly disable PWM audio
 sudo bash -c "sed -i \"s/^\s*dtparam=audio/#dtparam=audio/\" /boot/config.txt"
