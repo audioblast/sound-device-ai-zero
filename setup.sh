@@ -9,7 +9,9 @@ if [ "$cnt" -eq "0" ]; then
 	dtoverlay=audioinjector-wm8731-audio' >> /boot/config.txt"
 fi
 
-echo
+sudo mkdir -p /usr/share/doc/audioInjector/
+sudo mv *.test /usr/share/doc/audioInjector/
+
 echo The audio injector sound card is now setup.
 echo Please reboot to enable the correct device tree.
 echo
