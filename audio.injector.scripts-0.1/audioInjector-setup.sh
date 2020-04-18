@@ -1,11 +1,3 @@
-#!/bin/bash
-# Author : Matt Flax <flatmax@flatmax.org>
-# Date : 2016.07.08
-# Copyright : Flatmax Pty Ltd
-
-echo updating the kernel
-sudo rpi-update
-
 # check the device tree overlay is setup correctly ...
 # firstly disable PWM audio
 sudo bash -c "sed -i \"s/^\s*dtparam=audio/#dtparam=audio/\" /boot/config.txt"
